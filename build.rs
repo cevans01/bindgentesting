@@ -20,6 +20,7 @@ pub fn main() {
         // The input header we would like to generate
         // bindings for.
         .header("libfoo/foo.hpp")
+        .trust_clang_mangling(false)
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
