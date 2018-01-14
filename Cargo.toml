@@ -1,0 +1,19 @@
+[package]
+name = "libfoo-sys"
+version = "0.1.0"
+authors = ["Chris Evans <cevans3326@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "libfoo_sys"
+
+
+
+[dependencies]
+libc = "*"
+
+[build-dependencies]
+bindgen = "*"
+cc = "1.0"
+
+
